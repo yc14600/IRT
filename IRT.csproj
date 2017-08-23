@@ -9,6 +9,12 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+     <Reference Include="Infer.Compiler, Version=2.6.41114.1, Culture=neutral, PublicKeyToken=e4813102a62778da">
+      <HintPath>..\csharp_packages\Microsoft.Research.InferNET.2.6.41114.1\lib\net45\Infer.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Infer.Runtime, Version=2.6.41114.1, Culture=neutral, PublicKeyToken=e4813102a62778da">
+      <HintPath>..\csharp_packages\Microsoft.Research.InferNET.2.6.41114.1\lib\net45\Infer.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="MathNet.Numerics, Version=3.14.0.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\csharp_packages\MathNet.Numerics.3.14.0-beta03\lib\net40\MathNet.Numerics.dll</HintPath>
     </Reference>
@@ -18,8 +24,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="data.cs" />
+    <Compile Include="model.cs" />
  </ItemGroup>
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-<Target Name="data">  
+<Target Name="IRT">  
 </Target>
 </Project>
